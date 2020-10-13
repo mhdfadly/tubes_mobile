@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_img_bg"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/ubah_sandi"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.968"
+        tools:ignore="MissingConstraints"
+        tools:text="Ubah Kata Sandi" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/ic_baseline_chevron_left_24"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="413dp"
+        android:layout_height="699dp"
+        android:background="#d8d8d8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view7"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.357"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextTextPersonPassLama"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:background="@drawable/costum_input"
+            android:inputType="textPersonName"
+            android:text="Kata Sandi Lama" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonPassBaru"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:background="@drawable/costum_input"
+            android:inputType="textPersonName"
+            android:text="Kata Sandi Baru" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonKonfirmasiPass"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="160dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:background="@drawable/costum_input"
+            android:inputType="textPersonName"
+            android:text="Konfirmasi Kata Sandi" />
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/selesai"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round1"
+        android:text="Selesai"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0e3d44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_menu"
+        app:itemIconTint="@color/cardview_light_background"
+        app:itemTextColor="@color/cardview_light_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

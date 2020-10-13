@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">tubes_mobile</string>
+    <string name="daftar_barang">Daftar_Barang</string>
+    <string name="no_invoice">No. Invoice :</string>
+    <string name="tanggal_sewa">Tanggal Sewa :</string>
+    <string name="durasi">Durasi :</string>
+    <string name="status">Status :</string>
+    <string name="daftar_sewa">Daftar Sewa</string>
+    <string name="Senter">Senter</string>
+    <string name="satu">1</string>
+    <string name="nama_barang">Senter</string>
+    <string name="jml_barang">1</string>
+    <string name="nama_pengguna">Nama :</string>
+    <string name="alamat_pengguna">Alamat :</string>
+    <string name="email">Email</string>
+    <string name="email_pengguna">Email :</string>
+    <string name="edit_profil">Edit Profil</string>
+    <string name="ubah_sandi">Ubah Kata Sandi</string>
+    <string name="profil">Profil</string>
+</resources>

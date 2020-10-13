@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_img_bg"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/profil"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.968"
+        tools:ignore="MissingConstraints"
+        tools:text="Profil" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="413dp"
+        android:layout_height="699dp"
+        android:background="#d8d8d8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view7"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.357"
+        tools:ignore="MissingConstraints">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000000"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="130dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/nama_pengguna"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="180dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/alamat_pengguna"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="230dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/email_pengguna"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/edit_profil"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round1"
+        android:text="Edit Profil"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.706" />
+
+    <Button
+        android:id="@+id/ubah_sandi"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round1"
+        android:text="Ubah Kata Sandi"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.786" />
+
+    <Button
+        android:id="@+id/keluar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round1"
+        android:text="Keluar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#0e3d44"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_menu"
+        app:itemIconTint="@color/cardview_light_background"
+        app:itemTextColor="@color/cardview_light_background"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
